@@ -1,14 +1,13 @@
-// Sunset Keys v2 — the hand-in program for the gta6-01 bounty, rebuilt in a
-// fresh recorded session. It takes the game in game/ and the four screenshots
-// in screenshots/, copies both into the output directory, and writes
-// /output/dossier.json by calling buildDossier from the vendored make.fun
-// library — verbatim, byte for byte. The scorer rebuilds that dossier the
-// same way, so hand-rolling a manifest here would fail the gate exactly the
-// way the v1 entry failed it. Nothing in this file invents dossier data.
+// Sunset Keys v2 — the entry program for the gta6-01 bounty, written fresh
+// in this recorded session. It copies game/ and screenshots/ into the
+// output directory, then writes /output/dossier.json by calling buildDossier
+// from the vendored make.fun library, verbatim and byte for byte. The scorer
+// rebuilds the dossier the same way, so a hand-rolled manifest would fail
+// the gate exactly as the v1 entry did. Nothing here invents dossier data.
 // v2: nine jobs (eight story jobs plus the Solano Grand Prix street race),
-// restaged screenshots, richer Solano Bay — same starter pattern, unchanged.
+// restaged screenshots, richer Solano Bay — the starter pattern, unchanged.
 //
-// The game itself is plain static files a desktop browser loads offline:
+// The game is plain static files a desktop browser loads offline:
 // game/index.html, its ES modules, and the vendored three.js build under
 // game/vendor/. No network request happens anywhere.
 //
